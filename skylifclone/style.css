@@ -1,0 +1,227 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.navopen {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.active {
+    display: block;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo a {
+    padding-bottom: 10px;
+}
+
+.logo span {
+    display: inline-block;
+    color: red;
+    transform: rotate(-5deg);
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.nav-wrap .nav-items .nav-item-title {
+    font-size: 20px;
+    padding: 30px 15px;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.nav-wrap .nav-items:first-child .nav-item-title::after {
+    content: 'shop';
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    top: 14px;
+    left: calc(50% - 21px);
+    font-size: 14px;
+    background-color: red;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+
+}
+
+.nav-wrap .nav-items .nav-item-title span {
+    color: red;
+}
+
+
+.nav-items .sub-menu {
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
+    display: none;
+
+
+}
+
+
+.nav-items .sub-menu .inner {
+    display: flex;
+    padding: 20px 0;
+
+}
+
+.nav-items .sub-menu .sub-menu-summery {
+    padding: 10px 20px;
+
+}
+
+.nav-items .sub-menu .sub-menu-summery h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.nav-items .sub-menu .sub-menu-summery span {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.nav-items .sub-menu .sub-menu-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.nav-items .sub-menu .sub-menu-items .sub-menu-item {
+    width: 150px;
+}
+
+.nav-items .sub-menu .sub-menu-items .sub-menu-item .sub-menu-item-title {
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 12px;
+}
+
+
+
+.nav-items .sub-menu .sub-menu-items .sub-menu-item .sub-menu-item-list {
+    padding: 12px 0 0;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.utils {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    right: 30px;
+
+
+}
+
+.utils a {
+    padding: 12px 13px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    position: relative;
+}
+
+.utils a::before {
+    content: "";
+    background-color: #555;
+    width: 1px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1px;
+    margin: auto;
+}
+
+.utils a:last-child {
+    font-size: 30px;
+}
+
+.utils a:last-child::before {
+    display: none;
+}
+
+.bredcrumb {
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.bredcrumb ul {
+    display: flex;
+}
+
+.bredcrumb li {}
+
+.bredcrumb ul li:not(:first-child) {
+    margin-left: 15px;
+    padding-left: 6px;
+}
+
+.bredcrumb ul li:not(:last-child)::after {
+    content: '';
+    background-color: #dbdbdb;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    margin-left: 6px;
+    
+}
+
+.bredcrumb ul li:not(:first-child)::before {     
+    content: '';
+    width: 2px;    
+    height: 2px;    
+    border-top: 1px solid #fff;    
+    border-right: 1px solid #fff;    
+    transform: rotate(45deg); 
+    position: absolute;     
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: -12px;
+
+
+
+}
+
+.bredcrumb a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 48px;    
+    letter-spacing: -.03em;
+}
