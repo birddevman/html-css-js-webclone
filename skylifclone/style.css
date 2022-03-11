@@ -5,7 +5,24 @@ html {
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
-
+.btn {
+    display: inline-block;
+    background-color: red;
+    border: 1px solid red;
+    box-sizing: border-box;
+    width: 162px;
+    height: 60px;
+    border-radius: 30px;
+    color: white;    
+    padding: 21px 30px;
+    text-align: center;
+    line-height: 15px;
+    
+}
+.btn:hover{
+    background-color: #f04848;
+    
+}
 .navopen {
     background-color: rgba(0, 0, 0, .5);
 }
@@ -199,17 +216,17 @@ body {
     height: 10px;
     margin: auto;
     margin-left: 6px;
-    
+
 }
 
-.bredcrumb ul li:not(:first-child)::before {     
+.bredcrumb ul li:not(:first-child)::before {
     content: '';
-    width: 2px;    
-    height: 2px;    
-    border-top: 1px solid #fff;    
-    border-right: 1px solid #fff;    
-    transform: rotate(45deg); 
-    position: absolute;     
+    width: 2px;
+    height: 2px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -222,6 +239,99 @@ body {
 .bredcrumb a {
     font-weight: 400;
     font-size: 14px;
-    line-height: 48px;    
+    line-height: 48px;
     letter-spacing: -.03em;
+}
+
+.ads-main {
+    width: 1500px;
+    height: 600px;
+    background-color: #555;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.ads-main .ads-items{
+    width: 3000px;
+    display: flex;
+    background-color: #555;
+    height: 100%;
+    /* 자바스크립트로 페이지이동 추가 */
+}
+.ads-main .ads-item {
+    width: 1500px;    
+    height: 100%;
+    
+}
+.ads-main .ads-item.item1{
+    background: url(./images/main_vis_1_galaxy_220303.jpg);    
+}
+
+.ads-main .ads-item.item2{
+    background: url(./images/main_vis_6.jpg);    
+}
+.ads-items .textgroup{
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 150px;    
+    font-size: 40px;
+}
+.ads-items .textgroup .title {
+    font-weight: 300;
+}
+.ads-items .textgroup .text {
+    font-weight: 700;
+}
+.ads-items .textgroup .text2 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.ads-items .textgroup .btn{
+    margin-top: 50px;
+    font-size: 14px;
+}
+.ads-main .prev,.ads-main .next{
+    height: 50px;
+    position: absolute;    
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 50px;
+    background-color: #dbdbdb;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.ads-main .prev:hover,.ads-main .next:hover{
+    background-color: red;
+}
+.ads-main .prev{
+    left:50%;
+    margin-left: -600px;
+}
+.ads-main .next{
+    right: 50%;
+    margin-right: -600px;
+}
+
+.pagination {
+    position: absolute;
+    width: 1500px;
+    bottom: 0;     
+    display: flex;
+    justify-content: center;
+}
+
+.pagelist{
+    box-sizing: border-box;
+    background-color: #dbdbdb;
+    width: 10px;
+    height: 10px;
+    margin: 10px 5px;
+    border-radius: 25px;
+}
+.pagelist.active {
+    border: 1px solid red;
 }
